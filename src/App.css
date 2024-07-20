@@ -1,0 +1,35 @@
+.btns {
+  margin-top:20px;
+  grid-column: span 2;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+ 
+  display:flex;
+  float:right;
+  margin-right:25px
+
+}
+ 
+@media (max-width: 500px){
+    .btns{
+     display:flex;
+     font-size:16px;
+     float:left;
+     margin-left:10px;
+    }
+   }
+   @media (min-width: 500px) and (max-width: 1000px){
+    .btns{
+      
+     
+    font-size: 10px;
+    margin-top:20px;
+    margin-right:190px;
+   }
+  }
+  

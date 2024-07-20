@@ -1,0 +1,314 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    max-width:100%;
+    max-height:50vh;
+}
+
+.container{
+    
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      
+    margin-top:250px;
+
+   
+ 
+}
+table{
+    border:2px ;
+    width:90%;
+    border-collapse: collapse;
+   
+    overflow:hidden;
+    table-layout: fixed;
+justify-content: center;
+align-items: center;
+margin-left:100px;
+
+}  
+tr{
+    border:1px solid white;;
+    background-color:#d9dddc;
+    margin:2px 0px 0px 0px;
+ 
+}
+
+td .status-active{
+    border:1px solid green;
+    color:green;
+}
+td .status-pending{
+    border:1px solid red;
+    color:red; 
+}
+
+
+
+th{
+    background-color: purple;
+    color:white;
+    padding:10px;
+}
+th, td{
+
+}
+td{
+    width:10%;
+    margin-left:50px;
+    text-align:center;
+    color:black;
+}
+image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    background-color:#777b7e;
+    width:50%;
+    height:11vh;
+
+
+}
+h1 a{
+   text-align:center;
+    margin-top:30px;
+    margin-left:570px;
+    border:1px solid blue;
+    width: 350px;
+    color:black;
+
+}
+.delete{
+    color:red;
+    padding:15px;
+}
+.edit{
+    color:green;
+} */
+.container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top:50px;
+  }
+ 
+  
+  th, td {
+    padding: 25px 25px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    padding:20px;
+
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+   
+  }
+  
+  tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  td {
+    font-size: 18px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  td img {
+    max-width: 100px;
+    border-radius: 8px;
+  }
+  
+  .status-active {
+    color: green;
+  }
+  
+  .status-pending {
+    color:red;
+  }
+  
+  .delete, .edit {
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .delete svg {
+    color: red;
+    transition: color 0.3s ease;
+  }
+  
+  .edit svg {
+    color: blue;
+    transition: color 0.3s ease;
+  }
+  
+  .delete:hover svg {
+    color: darkred;
+  }
+  
+  .edit:hover svg {
+    color: darkblue;
+  }
+
+  
+  form #myInput {
+    box-sizing: border-box;
+  /* background-position: 14px 12px; */
+    /* background-repeat: no-repeat; */
+    font-size: 14px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin:15px 0px 0px 100px;
+    width:80%;
+   text-align:center;
+
+  }
+  .find{
+    position:absolute;
+    top:30px;
+    left:570px;
+  }
+
+  
+  #myInput:focus {outline: 3px solid #ddd;}
+  
+ @media (max-width: 500px){
+  form #myInput{
+    margin:25px 0px 0px 40px;
+    font-size:14px;
+    width:65%;
+    height:1vh;
+    text-align:center;
+    
+  }
+  form{
+    width:55%;
+    position:absolute;
+    top:2px;
+    left:110px;
+  }
+  .find{
+   
+    position:absolute;
+    left:70px;
+    top:30px;
+    font-size:12px;
+  }
+  .container {
+    padding: 0 5px;
+    overflow-x: auto;
+  }
+  th{
+    font-size:9px;
+  }
+  th, td {
+    padding: 5px 5px;
+  }
+  tr ,th,td{
+    font-size:14px;
+  }
+  td img {
+    max-width: 70px;
+  }
+  }
+
+  @media (min-width: 500px) and (max-width: 1000px) {
+    form #myInput{
+    
+      width: 40%;
+      position:absolute;
+      left:-79px;
+      font-size:14px;
+  }
+  .find{
+    position:absolute;
+    top:35px;
+    left:60px;
+  }
+  th{
+    font-size:11px;
+  }
+  th, td {
+    padding: 5px 4px;
+  }
+  tr ,th,td{
+    font-size:14px;
+  }
+  td img {
+    max-width: 70px;
+  }
+  }
+  
+  
+  /* @media (max-width: 668px) {
+    form #myInput{
+      width:55%;
+      margin:20px 0px 0px 160px;
+  }
+  table{
+    width:100%;
+  }
+  .container {
+    padding: 0 5px;
+    overflow-x: auto;
+   
+  }
+ th{
+    font-size:104px;
+    width:100%;
+  }
+  } */
+  /* @media (max-width: 600px) {
+    .container {
+      padding: 0 5px;
+      overflow-x: auto;
+    }
+    th{
+        font-size:12px;
+     
+    }
+  
+    th, td {
+      padding: 8px 10px;
+    }
+  
+    td img {
+      max-width: 80px;
+    }
+  }
+ 
+   
+  
+   @media only screen and (min-width: 768px) {
+    thead,tr,th{
+        font-size:11px;
+        padding:15px;
+    }
