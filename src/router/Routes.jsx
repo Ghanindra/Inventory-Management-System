@@ -1,14 +1,4 @@
-// import {
-//     createBrowserRouter,
-//     RouterProvider,
-//   } from "react-router-dom";
-//   const router = createBrowserRouter([
-//     {
-//       path: "/",
-//       element: <Shop/>,
-//     },
-//   ]);
-//   export default router;
+
 import {
     createBrowserRouter,
     RouterProvider,
