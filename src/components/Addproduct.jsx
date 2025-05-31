@@ -78,7 +78,7 @@ const AddProduct = ({ closeModal, onSubmit, defaultValue }) => {
         <div className="containers">
           <form className= "forms">
             <div className="form-group">
-              <label htmlFor="name">Name:</label>
+              <label htmlFor="name"> Full Name:</label>
               <input
                 name="name"
                 value={formState.name}
